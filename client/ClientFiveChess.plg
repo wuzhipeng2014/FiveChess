@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ClientFiveChess - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP39.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/ClientFiveChess.pdb" /debug /machine:I386 /out:"Debug/ClientFiveChess.exe" /pdbtype:sept 
+".\Debug\BlackStatic.obj"
+".\Debug\ChessBorad.obj"
+".\Debug\ClientFiveChess.obj"
+".\Debug\ClientFiveChessDlg.obj"
+".\Debug\ClientSock.obj"
+".\Debug\LeftPanel.obj"
+".\Debug\RightPanel.obj"
+".\Debug\SrvInfo.obj"
+".\Debug\StdAfx.obj"
+".\Debug\ClientFiveChess.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP39.tmp"
+<h3>Output Window</h3>
+Linking...
+
+
+
+<h3>Results</h3>
+ClientFiveChess.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

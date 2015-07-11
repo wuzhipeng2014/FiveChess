@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SrvFiveChess - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP4358.tmp" with contents
+[
+/nologo /o"Debug/SrvFiveChess.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\BlackStatic.sbr"
+".\Debug\ChessBorad.sbr"
+".\Debug\ClientSock.sbr"
+".\Debug\CustomMenu.sbr"
+".\Debug\LeftPanel.sbr"
+".\Debug\RightPanel.sbr"
+".\Debug\ServerSetting.sbr"
+".\Debug\SrvFiveChess.sbr"
+".\Debug\SrvFiveChessDlg.sbr"
+".\Debug\SrvSock.sbr"]
+Creating command line "bscmake.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP4358.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+SrvFiveChess.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

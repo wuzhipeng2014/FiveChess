@@ -1,0 +1,325 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SrvFiveChess.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAINICON            ICON    DISCARDABLE     "res\\12.ico"
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\SrvFiveChess.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 SrvFiveChess"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDI_MAINICON,IDC_STATIC,11,13,21,21
+    LTEXT           "SrvFiveChess 1.0 版",IDC_STATIC,40,12,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2008 吉林省明日科技有限公司",IDC_STATIC,40,
+                    29,171,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_SRVFIVECHESS_DIALOG DIALOGEX 0, 0, 688, 469
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "【五子棋游戏--服务器端】"
+MENU IDR_MAINMENU
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+END
+
+IDD_SERVERSETTING_DIALOG DIALOG DISCARDABLE  0, 0, 193, 136
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "服务器设置"
+FONT 9, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "服务器信息",IDC_STATIC,8,7,177,78
+    LTEXT           "服务器名称",IDC_STATIC,29,26,41,8
+    EDITTEXT        IDC_HOSTNAME,74,23,96,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "服务器端口",IDC_STATIC,29,44,41,8
+    EDITTEXT        IDC_PORT,74,40,96,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "设置",IDC_SET,73,93,42,15
+    PUSHBUTTON      "取消",IDCANCEL,128,93,42,15
+    LTEXT           "昵称",IDC_STATIC,53,61,17,8
+    EDITTEXT        IDC_NICKNAME,74,58,96,14,ES_AUTOHSCROLL
+END
+
+IDD_LEFTPANEL_DIALOG DIALOG DISCARDABLE  0, 0, 77, 365
+STYLE DS_CONTROL | WS_CHILD
+FONT 9, "MS Sans Serif"
+BEGIN
+    CONTROL         135,IDC_STATIC,"Static",SS_BITMAP,10,103,53,92
+    PUSHBUTTON      "悔棋",IDC_BT_BACK,12,229,48,16
+    PUSHBUTTON      "和棋",IDC_DRAW_CHESS,12,251,48,16
+    PUSHBUTTON      "开始",IDC_BEGINGAME,12,206,48,16
+    PUSHBUTTON      "认输",IDC_GIVE_UP,12,275,48,16
+    PUSHBUTTON      "游戏回放",IDC_BACK_PLAY,11,300,48,16
+END
+
+IDD_RIGHTPANEL_DIALOG DIALOG DISCARDABLE  0, 0, 231, 441
+STYLE DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS
+FONT 9, "MS Sans Serif"
+BEGIN
+    CONTROL         135,IDC_STATIC,"Static",SS_BITMAP,76,11,53,92
+    CONTROL         "List2",IDC_USERLIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,76,115,153,81
+    CONTROL         "",IDC_CONVERSATION,"RICHEDIT",ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_TABSTOP,77,196,151,205
+    PUSHBUTTON      "发送",IDC_SENDMSG,188,410,39,17
+    CONTROL         "",IDC_PANEL1,"Static",SS_BLACKFRAME,76,0,153,116
+    CONTROL         "",IDC_PANEL2,"Static",SS_BLACKFRAME,76,115,153,80
+    CONTROL         "",IDC_PANEL3,"Static",SS_BLACKFRAME,76,195,153,207
+    CONTROL         135,IDC_STATIC,"Static",SS_BITMAP,10,105,53,84
+    CONTROL         "",IDC_USER,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,129,2,
+                    99,111
+    LTEXT           "",IDC_NETSTATE,6,197,63,30
+    CONTROL         "",IDC_MESSAGE,"RICHEDIT",ES_AUTOHSCROLL | WS_TABSTOP,76,
+                    411,104,16
+    LTEXT           "",IDC_TOP,77,1,52,10
+    LTEXT           "",IDC_BOTTOM,77,95,52,20
+    LTEXT           "",IDC_FRAME1,75,410,105,18
+END
+
+IDD_CHESSBORAD_DIALOG DIALOG DISCARDABLE  0, 0, 417, 323
+STYLE DS_CONTROL | WS_CHILD
+FONT 9, "MS Sans Serif"
+BEGIN
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "SrvFiveChess Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "SrvFiveChess\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SrvFiveChess.EXE\0"
+            VALUE "ProductName", "SrvFiveChess 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SRVFIVECHESS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 681
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 462
+    END
+
+    IDD_SERVERSETTING_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 129
+    END
+
+    IDD_LEFTPANEL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 70
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 358
+    END
+
+    IDD_RIGHTPANEL_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 434
+    END
+
+    IDD_CHESSBORAD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 410
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 316
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "游戏设置"
+    BEGIN
+        MENUITEM "服务器设置",                  ID_MENUSVRSETTING
+    END
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "关于...",                     ID_MENUIDM_ABOUTBOX
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CHESSBOARD          BITMAP  DISCARDABLE     "res\\五子棋棋盘.bmp"
+IDB_WHITE               BITMAP  DISCARDABLE     "res\\白棋子.bmp"
+IDB_BLACK               BITMAP  DISCARDABLE     "res\\黑棋子.bmp"
+IDB_PLAYER              BITMAP  DISCARDABLE     "res\\Person.bmp"
+IDB_BLANK               BITMAP  DISCARDABLE     "res\\空白.bmp"
+IDB_BKBUTTON            BITMAP  DISCARDABLE     "res\\按钮.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 SrvFiveChess(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\SrvFiveChess.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
